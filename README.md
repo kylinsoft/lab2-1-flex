@@ -35,17 +35,70 @@
 
 1. 对于识别出的合法的单词，直接输出：
 
-识别出的单词 : 种别名称
-
-(“:”号前后各留一空格，一个单词占一行）
+识别出的单词 : 种别名称  (“:”号前后各留一空格，一个单词占一行）
 
 2. 对于所有的词法错误，应该报告词法错误，例如: '9ab'，'2f'等，应该报告错误，报告格式为：
 
-Lexical error - 行号 : 识别出来的串(如'9ab') 
-
-(“-”和“:”号前后各留一空格，报告之后换行)
+Lexical error - 行号 : 识别出来的串  (如'9ab', “-”和“:”号前后各留一空格，每报告一个词法错误之后换行)
 
 3. 对于whitespace和注释，直接忽略；
+
+对于一下程序
+```
+int main(){
+    float a, b;
+    int c = 085;
+    a = 020e-04f;
+    b = getfloat();
+    putfloat(a + b);
+    putch(10);
+    return 0;
+}
+```
+词法分析的输出为
+```
+nt : INT
+main : ID
+( : LP
+) : RP
+{ : LC
+float : FLOAT
+a : ID
+, : COMMA
+b : ID
+; : SEMICOLON
+int : INT
+c : ID
+= : ASSIGN
+Lexical error - line 3 : 085
+; : SEMICOLON
+a : ID
+= : ASSIGN
+020e-04f : FLOAT_LIT
+; : SEMICOLON
+b : ID
+= : ASSIGN
+getfloat : ID
+( : LP
+) : RP
+; : SEMICOLON
+putfloat : ID
+( : LP
+a : ID
++ : ADD
+b : ID
+) : RP
+; : SEMICOLON
+putch : ID
+( : LP
+10 : INT_LIT
+) : RP
+; : SEMICOLON
+return : RETURN
+0 : INT_LIT
+; : SEMICOLON
+} : RC
+```
 
 # flex使用手册
 
