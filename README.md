@@ -11,6 +11,8 @@
 等此法规则的定义,以及对应的动作代码。<p>
 
 目录结构：<p>
+```
+    
 .<p>
 ├── README.md   <p>
 ├── flex<p>
@@ -21,37 +23,5 @@
     ├── case_3.c<p>
     ├── case_4.c<p>
     └── case_5.c<p>
+```    
     
-    
-```
-.
-├── CMakeLists.txt
-├── README.md
-├── doc/                          #实验文档
-│   ├── AST.md                    #语法树说明
-│   ├── DeadCodeEli.pdf      
-│   ├── Dominance.pdf        
-│   ├── SysYFIR.md                #IR接口说明
-│   └── SysYF语言定义.pdf
-├── grammar/                      #词法和语法文件
-│   ├── SysYFParser.yy
-│   └── SysYFScanner.ll
-├── include/                      #头文件
-├── lib/
-├── report/                       #实验报告
-├── src                           #源代码
-│   ├── ASTBuilder/
-│   ├── ASTPrinter/
-│   ├── Checker/                  #类型检查
-│   ├── ErrorReporter/
-│   ├── Frontend/
-│   ├── Optimize/                 #优化算法
-│   ├── SysYFIR/                  #IR构建
-│   ├── SysYFIRBuilder/
-│   └── main.cpp
-└── test                          #测试集
-    ├── test.py                   #测试脚本
-    ├── test_2020/                #2020编译比赛测试集
-    └── test_2021/                #2021编译比赛测试集
-        
-```
