@@ -2,7 +2,6 @@
 
 目录结构：
 ```
-    
 .
 ├── README.md   
 ├── flex<p>
@@ -111,7 +110,10 @@ https://www.cs.princeton.edu/~appel/modern/c/software/flex/flex_toc.html
 # 编译环境
 
 (1) Ubuntu 18.04 LTS
-(2) GNU Build-essential (gcc,g++,...)
+
+(2) flex
+
+(3) GNU Build-essential (gcc,g++,...)
 
 # 评测
 
