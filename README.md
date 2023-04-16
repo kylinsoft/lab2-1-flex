@@ -42,7 +42,7 @@ Lexical error - 行号 : 识别出来的串  (如'9ab', “-”和“:”号前�
 
 3. 对于whitespace和注释，直接忽略；
 
-对于一下程序
+对于以下程序
 ```
 int main(){
     float a, b;
