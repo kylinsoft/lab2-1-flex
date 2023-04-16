@@ -109,11 +109,11 @@ https://www.cs.princeton.edu/~appel/modern/c/software/flex/flex_toc.html
  
 # 编译环境
 
-(1) Ubuntu 18.04 LTS
+(1) Ubuntu 18.04 LTS 及以上
 
-(2) flex
+(2) flex 2.6及以上
 
-(3) GNU Build-essential (gcc,g++,...)
+(3) GNU Build-essential (gcc,g++,...)，gcc 7.5及以上
 
 # 评测
 
