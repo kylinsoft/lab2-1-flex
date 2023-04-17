@@ -4,7 +4,7 @@
 ```
 .
 ├── README.md   
-├── flex<p>
+├── flex
 │   └── sysy.l     #词法规则文件(flex)
 └── test_cases     #测试用例
     ├── case_1.c   
