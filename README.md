@@ -56,7 +56,7 @@ int main(){
 ```
 词法分析的输出为
 ```
-nt : INT
+int : INT
 main : ID
 ( : LP
 ) : RP
